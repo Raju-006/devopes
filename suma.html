@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Sample Webpage</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="about">
+    <h2>About Me</h2>
+    <p>This is a sample webpage to demonstrate HTML structure. You can learn about various elements like paragraphs, links, images, tables, and forms here.</p>
+    <img src="https://via.placeholder.com/400" alt="Sample Image" width="400">
+</div>
+
+<div class="container" id="services">
+    <h2>Our Services</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Web Design</td>
+            <td>Creating beautiful and responsive websites</td>
+        </tr>
+        <tr>
+            <td>SEO</td>
+            <td>Optimizing your site for search engines</td>
+        </tr>
+        <tr>
+            <td>Content Creation</td>
+            <td>Writing quality content for blogs and websites</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 My Sample Webpage</p>
+</footer>
+
+</body>
+</html>
